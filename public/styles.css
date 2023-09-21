@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(main.jpg);
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  
+}
+
+.product {
+    flex: 0 0 calc(20% - 20px); /* 20% width with 20px spacing between products */
+    margin: 10px; /* Add spacing around each product */
+    display: grid;
+    border: 2px solid #b97a7a;
+    padding: 10px;
+    text-align: center;
+    max-width: 210px;
+}
+
+.product img {
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .product {
+        flex: 0 0 calc(33.33% - 20px); /* 33.33% width with 20px spacing on smaller screens */
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+}
+aside {
+    width: 550px;
+    height: 350px;
+    background-image: linear-gradient(pink, rgb(238, 238, 96));
+    padding: 1em;
+    margin: 1em;
+    margin-left: 24.7em;
+    text-align: center;
+    position: sticky;
+    border-radius: 20%;
+   
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+
+    cursor: pointer;
+    width: 5em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/*Navbar*/
+ 
+.cart-navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border-radius: 5%;
+}
+
+.cart-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-navbar li {
+    display: inline;
+    margin-right: 20px;
+    color: #fff; /* Set the font color for the list items */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.cart-navbar li a {
+    color: #fff; /* Set the font color for links inside list items */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.cart-navbar li a:hover {
+    color: pink; /* Change the font color on hover */
+}
+
+.cart-icon i {
+    font-size: 24px;
+    color: pink; /* Set the font color for the cart icon */
+}
