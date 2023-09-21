@@ -46,9 +46,12 @@ function updateCart() {
 }
 
 function checkout() {
-    alert(`Total Amount: $${total.toFixed(2)}`);
+    const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    alert(`Total Amount: R${total.toFixed(2)}`);
     cart = [];
     updateCart();
 }
+
+
 
 updateCart();
