@@ -113,3 +113,58 @@ button:hover {
     font-size: 24px;
     color: pink; /* Set the font color for the cart icon */
 }
+
+ /* Hero Section Styles */
+ .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: linear-gradient(pink, rgb(238, 238, 96));
+   
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #555; /* Subtle text color */
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff; /* Button text color */
+    background-color: #dfa2a2;
+    border-radius: 10%;
+    font-size: 1.4 em;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #dadd32; /* Button background color on hover */
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+}
