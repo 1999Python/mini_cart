@@ -1,3 +1,27 @@
+function openPopupAlert(message) {
+    const popupAlert = document.getElementById("popup-alert");
+    const popupMessage = document.getElementById("popup-message");
+    const closeButton = document.getElementById("popup-close");
+
+    popupMessage.textContent = message;
+    popupAlert.style.display = "block";
+
+   
+    closeButton.addEventListener("click", function () {
+        popupAlert.style.display = "none";
+        if (typeof onCloseCallback === 'function') {
+            onCloseCallback(); // Execute the callback function
+        }
+    });
+}
+
+ 
+
+function closePopupAlert() {
+    const popupAlert = document.getElementById("popup-alert");
+    popupAlert.style.display = "none";
+}
+
 let cart = [];
 
 function addToCart(productName, price) {
@@ -8,6 +32,7 @@ function addToCart(productName, price) {
         cart.push({ name: productName, price: price, quantity: 1 });
     }
     updateCart();
+    openPopupAlert(`An item has been added to the cart`);
 }
 
 function removeFromCart(productName) {
@@ -47,11 +72,14 @@ function updateCart() {
 
 function checkout() {
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    alert(`Total Amount: R${total.toFixed(2)}`);
+    openPopupAlert(`Total Amount: R${total.toFixed(2)}`, function () {
+        // This callback function will be executed when the user closes the popup
+        // After closing the popup, navigate to checkout.html
+        window.location.href = 'checkout.html';
+    });
     cart = [];
     updateCart();
 }
-
 
 
 updateCart();
