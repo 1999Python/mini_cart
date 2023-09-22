@@ -39,16 +39,9 @@ p {
     height: 250px;
 }
 
-@media (max-width: 768px) {
-    .product {
-        flex: 0 0 calc(33.33% - 20px);
-        /* 33.33% width with 20px spacing on smaller screens */
-        max-width: none;
-        /* Remove max-width on smaller screens */
-    }
-}
 
-aside {
+
+.cartCheck {
     width: 550px;
     height: 350px;
     background-image: linear-gradient(pink, rgb(238, 238, 96));
@@ -342,3 +335,22 @@ footer {
     cursor: pointer;
 
 }
+
+@media (max-width: 768px) {
+    .product {
+        flex: 0 0 calc(33.33% - 20px);
+        /* 33.33% width with 20px spacing on smaller screens */
+        max-width: none;
+        /* Remove max-width on smaller screens */
+    }
+
+   
+}
+@media (max-width: 768px) {
+    .cartCheck {
+        margin-left: 3em;
+        width: 400px; /* Make the cart section full-width on smaller screens */
+        /* Remove margin on smaller screens */
+    }
+}
+
