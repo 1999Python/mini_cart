@@ -27,8 +27,9 @@
     <!-- Hero-->
     <div class="hero-section">
         <div class="hero-content">
-            <h1 style="font-size: 2.4em;">The Donutteria</h1>
+            <h1 style="font-size: 2.4em;">THE DONUTTERIA</h1>
             <p> ABs are great, but have you tried donuts?<br>Discover the sweetest and most delicious donuts in town.</p>
+            
             <a href="#products" class="hero-button">Grab a Bit</a>
         </div>
         <div class="hero-image">
@@ -41,69 +42,70 @@
  <section id="products">
     <main >
         <div class="product">
-            <img src="./public/product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
+            <img src="./public/product1.jpg" alt="Product 1" >
+            <h2>Mocha Coffee Cake</h2>
             <p>R100.00</p>
-            <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Mocha Coffee Cake', 100)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./public/product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
+            <h2>Decadent Chocolate Dono</h2>
             <p>R150.00</p>
-            <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Decadent Chocolate Dono', 150)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./public/product3.jpg" alt="Product ">
-            <h2>Product 3</h2>
+            <h2>Kids Minnie Donuts</h2>
             <p>R150.00</p>
-            <button onclick="addToCart('Product 3', 150)">Add to Cart</button>
+            
+            <button class="addBtn" onclick="addToCart('Kids Minnie Donuts', 150)">Add to Cart</button>
         </div>
         <div class="product">
-            <img src="./public/product4.jpg" alt="Product 4">
-            <h2>Product 4</h2>
+            <img src="./public/product9.jpg" alt="Product 4">
+            <h2>Bubble Waffle</h2>
             <p>R70.00</p>
-            <button onclick="addToCart('Product 4', 70)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Bubble Waffle', 70)">Add to Cart</button>
         </div>
         
         <div class="product">
             <img src="./public/product5.jpg" alt="Product 5">
-            <h2>Product 5</h2>
-            <p>R50.00</p>
-            <button onclick="addToCart('Product 5', 50)">Add to Cart</button>
+            <h2>Office Pack</h2>
+            <p>R150.00</p>
+            <button class="addBtn" onclick="addToCart('Office Pack', 150)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./public/product6.jpg" alt="Product 6">
-            <h2>Product 6</h2>
+            <h2>Traditional Glazed Donut</h2>
             <p>R70.00</p>
-            <button onclick="addToCart('Product 6', 70)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Traditional Glazed Donut', 70)">Add to Cart</button>
         </div>
 
         <div class="product">
             <img src="./public/product7.jpg" alt="Product 7">
-            <h2>Product 7</h2>
+            <h2>Party Donut <br> Ice-Cream</h2>
             <p>R77.00</p>
-            <button onclick="addToCart('Product 7', 77)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Party Donut <br> Ice-Cream', 77)">Add to Cart</button>
         </div>
 
         <div class="product">
             <img src="./public/product8.jpg" alt="Product 8">
-            <h2>Product 8</h2>
+            <h2>Breakfast Strawberry Waffles</h2>
             <p>R60.70</p>
-            <button onclick="addToCart('Product 8', 60.70)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Breakfast Strawberry Waffles', 60.70)">Add to Cart</button>
         </div>
 
         <div class="product">
-            <img src="./public/product9.jpg" alt="Product 9">
-            <h2>Product 9</h2>
+            <img src="./public/product4.jpg" alt="Product 9">
+            <h2>Spring Glazed Donuts</h2>
             <p>R32.00</p>
-            <button onclick="addToCart('Product 9', 32)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Spring Glazed Donuts', 32)">Add to Cart</button>
         </div>
 
         <div class="product">
             <img src="./public/product10.jpg" alt="Product 10">
-            <h2>Product 10</h2>
+            <h2>Coca truffles</h2>
             <p>R59.00</p>
-            <button onclick="addToCart('Product 10', 59)">Add to Cart</button>
+            <button class="addBtn" onclick="addToCart('Coca truffles', 59)">Add to Cart</button>
         </div>
 
     </main>
@@ -111,10 +113,47 @@
         <h2>Cart</h2>
         <ul id="cart"></ul>
         <p>Total: R<span id="total">0.00</span></p>
-        <a href="checkout.html">  <button onclick="checkout()">Checkout</button></a>
+        <a href="checkout.html">  <button class="checkoutBtn" onclick="checkout()">Checkout</button></a>
       
     </aside>
 </section>
+
+ <!-- About section -->
+ <section id="about">
+    <div class="container">
+        <h2>About</h2>
+        <p>Welcome to our shoe catalog shop, where you can explore a wide range of stylish and comfortable footwear. We are passionate about shoes and dedicated to providing you with the best selection of shoes for every occasion.</p>
+        
+        <p>At our shop, we believe that the right pair of shoes can make a difference in your style and comfort. Whether you're looking for trendy sneakers, elegant formal shoes, or durable outdoor footwear, we've got you covered.</p>
+
+        <p>What sets us apart:</p>
+        <ul>
+            <li>High-Quality Footwear: We source our shoes from reputable manufacturers known for their craftsmanship and quality materials.</li>
+            <li>Diverse Selection: Our catalog includes a variety of shoe styles, sizes, and colors to suit your preferences.</li>
+            <li>Competitive Prices: We offer competitive pricing to make fashionable and comfortable shoes accessible to everyone.</li>
+            <li>Exceptional Customer Service: Our team is here to assist you with any inquiries and ensure a smooth shopping experience.</li>
+        </ul>
+
+        <p>Thank you for choosing us as your go-to destination for all your shoe needs. We look forward to helping you find the perfect pair of shoes that complements your style and keeps you comfortable throughout the day.</p>
+    </div>
+</section>
+  <!-- contact us -->
+  <section id="contact" class="contact-section">
+    <h2 class="contact-heading">Contact Us</h2>
+    <p>Have questions or feedback? Reach out to us through social media:</p>
+    
+    <div class="contact-social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/raadiyah-arend-b55a0520b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Or call us on our hotline on 011 894 9956</p>
+
+    <a href="#"> <button class="topBtn">Home</button></a>
+   
+</section>
     <script src="script.js"></script>
+    <footer>Copyright &#169 2023 Raadiyah Arend. All Rights Reserved. </footer>
 </body>
 </html>
